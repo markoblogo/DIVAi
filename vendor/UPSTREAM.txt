@@ -1,0 +1,11 @@
+The RGB444 / escaped packet format in device.py and the IOBluetooth transport in
+timebox_bridge.swift are adapted from den-sv/div-box (MIT).
+
+Repository: https://github.com/den-sv/div-box
+Revision: 2405b9d823cc0aaf08697ec6a02007cfedf2c936
+Original sources: timebox/proto.py, bridge/tbridge.swift, bridge/Info.plist
+Full license: LICENSE-div-box.txt
+
+This adaptation supports the 11 x 11 TimeBox Mini only. The helper selects a paired
+Mini, accepts frames from its parent process, checks each RFCOMM write and exits
+when the parent closes its input. It does not change system audio or run a service.
