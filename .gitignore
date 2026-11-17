@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+/.cache/
+/takes/
+/character.json
+/observer.json
+/director.json
